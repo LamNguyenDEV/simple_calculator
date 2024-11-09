@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+        display: block;
+        float:left ; 
+        width: 25%;
+        height:40px;
+        color: black;
+
+        }
+        button {
+            width: 10%;
+            float: right;
+        }
+      .lastbox{
+        display: block;
+        float:left ; 
+        width: 20%;
+        height: 20px;
+        border:solid  rgba(0, 0, 0, 0.384) ;   
+      }
+      body{
+        background-color: rgb(182, 221, 221);
+      }
+    </style>
+</head>
+<body>
+    <script>    
+    // check input for value >0 
+        function initial_Value(){
+            if ((document.getElementById("value1").value) <'0') {
+                alert("Please enter positive number only ");
+                //reset value 
+                (document.getElementById("value1").value)='';
+            }
+        }
+    // Add input for percent
+        function cal_Percent(){
+        
+            if(document.getElementById("value1").value=="") {
+                // alert user to put total value first
+                alert("Please enter the Total Amount first");
+                document.getElementById("percentage").value="";
+                // change title total value to red color
+                document.getElementById("totalValue").style = "color: rgb(180, 15, 45);display: inline-block;";
+                // create question mark? to guide user enter TOTAL VALUE
+                document.getElementById("questionMark").style= "background-color: rgb(227, 212, 212); color: rgb(196, 13, 13); display:inline-block;";
+                
+            } else {
+                //get value of TOTAL VALUE
+                total = document.getElementById("value1").value;
+                //get % 
+                value = document.getElementById("percentage").value;        
+                console.log(value)
+                //Calculate FINAL VALUE
+                document.getElementById("final_value").innerHTML= total * value/100;
+                // return to TOTAL VALUE to normal color
+                document.getElementById("totalValue").style = "display: inline-block;color: black"
+                // delete questionmark
+                document.getElementById("questionMark").style="display: none"
+            }                 
+        }
+        // function on change when input enter PERCENTAGE rate
+        function cal_Percent1(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage1").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value1").innerHTML= total * value/100;                
+        }
+        function cal_Percent2(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage2").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value2").innerHTML= total * value/100;                
+        }
+        function cal_Percent3(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage3").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value3").innerHTML= total * value/100;                
+        }
+        function cal_Percent4(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage4").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value4").innerHTML= total * value/100;                
+        } 
+        
+        function cal_Percent5(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage5").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value5").innerHTML= total * value/100;                
+        }
+        function cal_Percent6(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage6").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value6").innerHTML= total * value/100;                
+        }
+        function cal_Percent7(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage7").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value7").innerHTML= total * value/100;                
+        }
+        function cal_Percent8(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage8").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value8").innerHTML= total * value/100;                
+        }
+        function cal_Percent9(){
+            //get value of tatal
+            total = document.getElementById("value1").value;
+            //get % 
+             value = document.getElementById("percentage9").value;        
+                console.log(value)
+            //Calculate and display result
+           document.getElementById("final_value9").innerHTML= total * value/100;                
+        }
+  // function add entry      
+        function add() {
+            document.getElementById("n1").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+        function add1() {
+            document.getElementById("n2").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+        function add2() {
+            document.getElementById("n3").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+        function add3() {
+            document.getElementById("n4").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+        function add4() {
+            document.getElementById("n5").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+        function add5() {
+            document.getElementById("n6").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+        function add6() {
+            document.getElementById("n7").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+        function add7() {
+            document.getElementById("n8").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+        function add8() {
+            document.getElementById("n9").style="display:invisible ; width: 100%;  ;overflow: auto;";
+        }
+ // function remove entry
+        function remove1(){
+            //reset value
+            document.getElementById("percentage1").value=null;                 
+            document.getElementById("final_value1").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n1").style="display:none";     
+        }
+        function remove2(){
+            //reset value
+            document.getElementById("percentage2").value=null;                 
+            document.getElementById("final_value2").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n2").style="display:none";     
+        }
+        function remove3(){
+            //reset value
+            document.getElementById("percentage3").value=null;                 
+            document.getElementById("final_value3").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n3").style="display:none";     
+        }
+        function remove4(){
+            //reset value
+            document.getElementById("percentage4").value=null;                 
+            document.getElementById("final_value4").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n4").style="display:none";     
+        }
+        function remove5(){
+            //reset value
+            document.getElementById("percentage5").value=null;                 
+            document.getElementById("final_value5").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n5").style="display:none";     
+        }
+        function remove6(){
+            //reset value
+            document.getElementById("percentage6").value=null;                 
+            document.getElementById("final_value6").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n6").style="display:none";     
+        } 
+        function remove7(){
+            //reset value
+            document.getElementById("percentage7").value=null;                 
+            document.getElementById("final_value7").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n7").style="display:none";     
+        }
+        function remove8(){
+            //reset value
+            document.getElementById("percentage8").value=null;                 
+            document.getElementById("final_value8").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n8").style="display:none";     
+        } 
+        function remove9(){
+            //reset value
+            document.getElementById("percentage9").value=null;                 
+            document.getElementById("final_value9").innerHTML= null;  
+            // disappeard inputs
+            document.getElementById("n9").style="display:none";     
+        }
+    </script>
+
+    <div style="display: inline-block; overflow: auto;" >
+        <h2 style="display: inline-block;" id="totalValue">Total amount</h2>
+        <input  style="display: inline-block;" type="number" name="" id="value1" onchange="initial_Value()">
+        <h2 id="questionMark" style="background-color: rgb(227, 212, 212); color: rgb(196, 13, 13); display:none;" ><--??</i>
+    </div>
+ 
+    <div id="input">     
+        <div>
+            <h2 id="label_text"style="display: inline-block; width: 25%;">Label</h2>
+            <h2 style="display: inline-block; width: 25%;">Percentage (%)</h2>
+            <h2 id="text_value" style="display: inline-block;width: 25%;">Value:</h2>
+        </div>
+    </div>   
+<!-- inputs #0 -->
+        <div style="width: 100%;  ;overflow: auto;">
+
+            <div class="box">
+                <input type="text"  id="label" >
+            </div>
+
+            <div class="box">
+                <input type="number" name="percentage"  id="percentage" onchange="cal_Percent()">
+            </div>
+
+            <div class="lastbox">
+                <h3 type="number" name="final_value" id="final_value" style="display: inline; "   ></h3>
+            </div>
+            
+            <div>
+                 <button onclick="add()">+</button>
+                 <button onclick="remove()">-</button>
+               
+            </div>
+        </div>
+    
+<!-- inputs #1 -->
+    <div id="n1" style="width: 100%;  ;overflow: auto;display: none; ">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage1" onchange="cal_Percent1()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value1" style="display: inline; " ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add1()">+</button>
+             <button onclick="remove1()">-</button>
+           
+        </div>
+    </div>
+<!-- inputs #2 -->
+    <div  id="n2" style="  width: 100%;  ;overflow: auto;display: none">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage2" onchange="cal_Percent2()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value2" style="display: inline; "   ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add2()">+</button>
+             <button onclick="remove2()">-</button>
+           
+        </div>
+    </div>
+<!-- inputs #3 -->
+    <div id="n3" style="width: 100%;  ;overflow: auto;display: none">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage3" onchange="cal_Percent3()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value3" style="display: inline; "   ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add3()">+</button>
+             <button onclick="remove3()">-</button>
+           
+        </div>
+    </div>
+<!-- inputs #4 -->    
+    <div id="n4" style="width: 100%;  ;overflow: auto;display: none">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage4" onchange="cal_Percent4()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value4" style="display: inline; "   ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add4()">+</button>
+             <button onclick="remove4()">-</button>
+           
+        </div>
+    </div>
+<!-- inputs #5 -->
+    <div id="n5" style="width: 100%;  ;overflow: auto;display: none">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage5" onchange="cal_Percent5()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value5" style="display: inline; "   ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add5()">+</button>
+             <button onclick="remove5()">-</button>
+           
+        </div>
+    </div>
+<!-- inputs #6 -->    
+    <div id="n6"  style="width: 100%;  ;overflow: auto;display: none">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage6" onchange="cal_Percent6()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value6" style="display: inline; "   ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add6()">+</button>
+             <button onclick="remove6()">-</button>
+           
+        </div>
+    </div>
+<!-- inputs #7 -->    
+    <div  id="n7"  style="width: 100%;  ;overflow: auto;display: none">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage7" onchange="cal_Percent7()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value7" style="display: inline; "  ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add7()">+</button>
+             <button onclick="remove7()">-</button>
+           
+        </div>
+    </div>
+<!-- inputs #8 -->    
+    <div  id="n8"  style="width: 100%;  ;overflow: auto;display: none">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage8" onchange="cal_Percent8()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value8" style="display: inline; "   ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add8()">+</button>
+             <button onclick="remove8()">-</button>
+           
+        </div>
+    </div>
+<!-- inputs #9 -->    
+    <div  id="n9" style="width: 100%;  ;overflow: auto;display: none">
+
+        <div class="box">
+            <input type="text"  id="label" >
+        </div>
+
+        <div class="box">
+            <input type="number" name="percentage"  id="percentage9" onchange="cal_Percent9()">
+        </div>
+
+        <div class="lastbox">
+            <h3 type="number" name="final_value" id="final_value9" style="display: inline; "   ></h3>
+        </div>
+        
+        <div>
+             <button onclick="add9()">+</button>
+             <button onclick="remove9()">-</button>
+           
+        </div>
+    </div>
+    
+</body>
+</html>
