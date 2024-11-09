@@ -4,5 +4,7 @@ Javascript code to implement a simple calculator
 
 # Website to test: 
 https://htmlpreview.github.io/?https://github.com/LamNguyenDEV/simple_calculator/blob/master/index.html
-#Contact via email: 
+
+
+# Contact via email: 
 nguyenl9@montclair.edu
